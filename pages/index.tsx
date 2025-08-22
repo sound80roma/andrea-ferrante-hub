@@ -3,35 +3,12 @@ import { useMemo, useState } from "react";
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <Header />
       <main className="mx-auto max-w-6xl px-4 pb-24">
         <Hero />
         <QuickActions />
         <AppGrid />
       </main>
-      <Footer />
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <header className="sticky top-0 z-30 w-full backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-slate-200">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-2xl bg-slate-900 text-white grid place-content-center font-bold">AF</div>
-          <div>
-            <div className="text-sm uppercase tracking-wider text-slate-500">Andrea Ferrante</div>
-            <div className="text-xs text-slate-400">app hub personale</div>
-          </div>
-        </div>
-        <nav className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#apps" className="hover:text-slate-700">App</a>
-          <a href="#about" className="hover:text-slate-700">Chi sono</a>
-          <a href="#contact" className="hover:text-slate-700">Contatti</a>
-        </nav>
-      </div>
-    </header>
   );
 }
 
@@ -221,34 +198,6 @@ function Kpi({ title, value, note }: { title: string; value: string; note?: stri
   );
 }
 
-function Footer() {
-  return (
-    <footer id="about" className="border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-10 grid gap-6 md:grid-cols-3">
-        <div>
-          <div className="font-semibold">Andrea Ferrante</div>
-          <p className="text-sm text-slate-600 mt-2">
-            Costruisco piccole applicazioni utili per la vita reale. Questo hub raccoglie tutti i
-            miei progetti.
-          </p>
-        </div>
-        <div>
-          <div className="font-semibold">Tecnologie</div>
-          <ul className="text-sm text-slate-600 mt-2 space-y-1 list-disc pl-5">
-            <li>Next.js / React</li>
-            <li>Tailwind CSS</li>
-            <li>Vercel (deploy)</li>
-          </ul>
-        </div>
-        <div id="contact">
-          <div className="font-semibold">Contatti</div>
-          <p className="text-sm text-slate-600 mt-2">Scrivimi su <span className="font-medium">LinkedIn</span> oppure invia un'idea per una nuova app.</p>
-        </div>
-      </div>
-      <div className="text-center text-xs text-slate-500 pb-8">© {new Date().getFullYear()} Andrea Ferrante · Tutti i diritti riservati</div>
-    </footer>
-  );
-}
 
 function formatMoney(n: number) {
   try {
