@@ -21,7 +21,7 @@ function Hero() {
             Tutte le mie applicazioni,<br className="hidden md:block" /> in un unico posto.
           </h1>
           <p className="mt-4 text-slate-600 md:text-lg">
-            Questo è lo spazio dove pubblico gli strumenti che creo insieme a ChatGPT: finanza
+            Questo Andrea è lo spazio dove pubblico gli strumenti che creo insieme a ChatGPT: finanza
             personale, affitti, investimenti, produttività. Ogni app è semplice, chiara e pronta
             all'uso.
           </p>
