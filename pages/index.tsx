@@ -89,6 +89,20 @@ function AppGrid() {
         <AppCard title="Spese & Entrate Mensili" emoji="📊🧾" description="Pannello per tracciare budget mensile e report annuale.">
           <ComingSoon name="Spese & Entrate" />
         </AppCard>
+
+              <AppCard title="Prenota Lavinio" emoji="🏖️🛏️" description="Prenota una stanza del mio appartamento a Lavinio.">
+                <div className="text-sm">
+                  <p>Per ora questa è solo l’anteprima: clicca sotto per aprire la pagina dedicata.</p>
+                   <div className="mt-4">
+                     <a
+                       href="/lavinio-booking"
+                      className="inline-flex items-center rounded-xl px-4 py-2 text-sm font-medium ring-1 ring-gray-300 hover:bg-gray-50"
+                    >
+                      Vai a Prenota Lavinio
+                     </a>
+                   </div>
+                 </div>
+               </AppCard>
       </div>
     </section>
   );

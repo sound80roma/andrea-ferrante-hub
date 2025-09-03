@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import type { ReactNode } from "react";
 
+
 function NavLink({ href, children }: { href: string; children: ReactNode }) {
   const { pathname } = useRouter();
   const active = pathname === href || (href !== "/" && pathname.startsWith(href));
@@ -37,6 +38,9 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/#apps" className="hover:text-slate-700">App</Link>
+          <Link href="/lavinio-booking" className="rounded-xl px-3 py-2 text-sm font-medium ring-1 ring-gray-300 hover:bg-gray-50"           >
+             Prenota Lavinio
+           </Link>
           <a href="/houses" className="hover:text-slate-700">Affitto studenti</a>
           <NavLink href="/contact">Contatti</NavLink>
         </nav>
